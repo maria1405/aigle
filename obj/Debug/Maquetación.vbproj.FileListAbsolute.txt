@@ -1,0 +1,17 @@
+C:\Users\Esmeralda Ornelas\Documents\VisualStudio practicas\Maquetación\Maquetación\Maquetación\bin\Debug\Maquetación.exe.config
+C:\Users\Esmeralda Ornelas\Documents\VisualStudio practicas\Maquetación\Maquetación\Maquetación\bin\Debug\Maquetación.exe
+C:\Users\Esmeralda Ornelas\Documents\VisualStudio practicas\Maquetación\Maquetación\Maquetación\bin\Debug\Maquetación.pdb
+C:\Users\Esmeralda Ornelas\Documents\VisualStudio practicas\Maquetación\Maquetación\Maquetación\bin\Debug\Maquetación.xml
+C:\Users\Esmeralda Ornelas\Documents\VisualStudio practicas\Maquetación\Maquetación\Maquetación\obj\Debug\Maquetación.vbprojResolveAssemblyReference.cache
+C:\Users\Esmeralda Ornelas\Documents\VisualStudio practicas\Maquetación\Maquetación\Maquetación\obj\Debug\Maquetación.Resources.resources
+C:\Users\Esmeralda Ornelas\Documents\VisualStudio practicas\Maquetación\Maquetación\Maquetación\obj\Debug\Maquetación.vbproj.GenerateResource.Cache
+C:\Users\Esmeralda Ornelas\Documents\VisualStudio practicas\Maquetación\Maquetación\Maquetación\obj\Debug\Maquetación.vbproj.CoreCompileInputs.cache
+C:\Users\Esmeralda Ornelas\Documents\VisualStudio practicas\Maquetación\Maquetación\Maquetación\obj\Debug\Maquetación.exe
+C:\Users\Esmeralda Ornelas\Documents\VisualStudio practicas\Maquetación\Maquetación\Maquetación\obj\Debug\Maquetación.xml
+C:\Users\Esmeralda Ornelas\Documents\VisualStudio practicas\Maquetación\Maquetación\Maquetación\obj\Debug\Maquetación.pdb
+C:\Users\Esmeralda Ornelas\Documents\VisualStudio practicas\Maquetación\Maquetación\Maquetación\obj\Debug\Maquetación.login.resources
+C:\Users\Esmeralda Ornelas\Documents\VisualStudio practicas\Maquetación\Maquetación\Maquetación\obj\Debug\Maquetación.Registro.resources
+C:\Users\Esmeralda Ornelas\Documents\VisualStudio practicas\Maquetación\Maquetación\Maquetación\obj\Debug\Maquetación.Cursos.resources
+C:\Users\Esmeralda Ornelas\Documents\VisualStudio practicas\Maquetación\Maquetación\Maquetación\obj\Debug\Maquetación.Ingles.resources
+C:\Users\Esmeralda Ornelas\Documents\VisualStudio practicas\Maquetación\Maquetación\Maquetación\obj\Debug\Maquetación.español.resources
+C:\Users\Esmeralda Ornelas\Documents\VisualStudio practicas\Maquetación\Maquetación\Maquetación\obj\Debug\Maquetación.matematicas.resources
