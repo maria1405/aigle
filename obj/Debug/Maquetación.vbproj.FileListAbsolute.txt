@@ -15,3 +15,23 @@ C:\Users\Esmeralda Ornelas\Documents\VisualStudio practicas\Maquetación\Maqueta
 C:\Users\Esmeralda Ornelas\Documents\VisualStudio practicas\Maquetación\Maquetación\Maquetación\obj\Debug\Maquetación.Ingles.resources
 C:\Users\Esmeralda Ornelas\Documents\VisualStudio practicas\Maquetación\Maquetación\Maquetación\obj\Debug\Maquetación.español.resources
 C:\Users\Esmeralda Ornelas\Documents\VisualStudio practicas\Maquetación\Maquetación\Maquetación\obj\Debug\Maquetación.matematicas.resources
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\obj\Debug\Maquetación.vbprojResolveAssemblyReference.cache
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\obj\Debug\Maquetación.addlesson.resources
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\obj\Debug\Maquetación.add_cursos.resources
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\obj\Debug\Maquetación.Cursos.resources
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\obj\Debug\Maquetación.Curso.resources
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\obj\Debug\Maquetación.INDEX.resources
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\obj\Debug\Maquetación.Leccion.resources
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\obj\Debug\Maquetación.login.resources
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\obj\Debug\Maquetación.Resources.resources
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\obj\Debug\Maquetación.PERFIL.resources
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\obj\Debug\Maquetación.Registro.resources
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\obj\Debug\Maquetación.vbproj.GenerateResource.Cache
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\obj\Debug\Maquetación.vbproj.CoreCompileInputs.cache
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\obj\Debug\Maquetación.exe
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\obj\Debug\Maquetación.xml
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\obj\Debug\Maquetación.pdb
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\bin\Debug\Maquetación.exe.config
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\bin\Debug\Maquetación.exe
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\bin\Debug\Maquetación.pdb
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\bin\Debug\Maquetación.xml

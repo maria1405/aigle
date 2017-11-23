@@ -19,8 +19,6 @@
     End Sub
 
     Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
-        matematicas.Show()
-        Me.Hide()
 
     End Sub
 End Class

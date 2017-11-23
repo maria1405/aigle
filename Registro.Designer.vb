@@ -22,21 +22,21 @@ Partial Class Registro
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.txt_nombre = New System.Windows.Forms.TextBox()
+        Me.btn_guardar = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.txt_conf_pass = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txt_passw = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txt_usu = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txt_ap = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.btn_cancelar = New System.Windows.Forms.Button()
+        Me.txt_email = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
@@ -48,24 +48,25 @@ Partial Class Registro
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'txt_nombre
         '
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Location = New System.Drawing.Point(120, 89)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(418, 20)
-        Me.TextBox1.TabIndex = 20
+        Me.txt_nombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_nombre.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_nombre.Location = New System.Drawing.Point(120, 89)
+        Me.txt_nombre.Multiline = True
+        Me.txt_nombre.Name = "txt_nombre"
+        Me.txt_nombre.Size = New System.Drawing.Size(418, 20)
+        Me.txt_nombre.TabIndex = 20
         '
-        'Button1
+        'btn_guardar
         '
-        Me.Button1.Font = New System.Drawing.Font("Sitka Small", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(378, 310)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(160, 38)
-        Me.Button1.TabIndex = 25
-        Me.Button1.Text = "GUARDAR REGISTRO"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btn_guardar.Font = New System.Drawing.Font("Sitka Small", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_guardar.Location = New System.Drawing.Point(378, 310)
+        Me.btn_guardar.Name = "btn_guardar"
+        Me.btn_guardar.Size = New System.Drawing.Size(160, 38)
+        Me.btn_guardar.TabIndex = 25
+        Me.btn_guardar.Text = "GUARDAR REGISTRO"
+        Me.btn_guardar.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -77,14 +78,15 @@ Partial Class Registro
         Me.Label1.TabIndex = 14
         Me.Label1.Text = "REGISTRO"
         '
-        'TextBox5
+        'txt_conf_pass
         '
-        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox5.Location = New System.Drawing.Point(298, 267)
-        Me.TextBox5.Multiline = True
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(240, 20)
-        Me.TextBox5.TabIndex = 24
+        Me.txt_conf_pass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_conf_pass.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_conf_pass.Location = New System.Drawing.Point(298, 267)
+        Me.txt_conf_pass.Multiline = True
+        Me.txt_conf_pass.Name = "txt_conf_pass"
+        Me.txt_conf_pass.Size = New System.Drawing.Size(240, 20)
+        Me.txt_conf_pass.TabIndex = 24
         '
         'Label2
         '
@@ -95,14 +97,16 @@ Partial Class Registro
         Me.Label2.TabIndex = 15
         Me.Label2.Text = "NOMBRE"
         '
-        'TextBox4
+        'txt_passw
         '
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox4.Location = New System.Drawing.Point(174, 227)
-        Me.TextBox4.Multiline = True
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(364, 20)
-        Me.TextBox4.TabIndex = 23
+        Me.txt_passw.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_passw.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_passw.Location = New System.Drawing.Point(174, 227)
+        Me.txt_passw.Multiline = True
+        Me.txt_passw.Name = "txt_passw"
+        Me.txt_passw.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txt_passw.Size = New System.Drawing.Size(364, 20)
+        Me.txt_passw.TabIndex = 23
         '
         'Label3
         '
@@ -113,14 +117,15 @@ Partial Class Registro
         Me.Label3.TabIndex = 16
         Me.Label3.Text = "APELLIDO PATERNO"
         '
-        'TextBox3
+        'txt_usu
         '
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox3.Location = New System.Drawing.Point(232, 190)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(306, 20)
-        Me.TextBox3.TabIndex = 22
+        Me.txt_usu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_usu.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_usu.Location = New System.Drawing.Point(232, 190)
+        Me.txt_usu.Multiline = True
+        Me.txt_usu.Name = "txt_usu"
+        Me.txt_usu.Size = New System.Drawing.Size(306, 20)
+        Me.txt_usu.TabIndex = 22
         '
         'Label4
         '
@@ -131,14 +136,15 @@ Partial Class Registro
         Me.Label4.TabIndex = 17
         Me.Label4.Text = "NOMBRE DE USUARIO"
         '
-        'TextBox2
+        'txt_ap
         '
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox2.Location = New System.Drawing.Point(213, 120)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(324, 20)
-        Me.TextBox2.TabIndex = 21
+        Me.txt_ap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_ap.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_ap.Location = New System.Drawing.Point(213, 120)
+        Me.txt_ap.Multiline = True
+        Me.txt_ap.Name = "txt_ap"
+        Me.txt_ap.Size = New System.Drawing.Size(324, 20)
+        Me.txt_ap.TabIndex = 21
         '
         'Label5
         '
@@ -162,21 +168,21 @@ Partial Class Registro
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.GroupBox1.Controls.Add(Me.Button2)
-        Me.GroupBox1.Controls.Add(Me.TextBox6)
+        Me.GroupBox1.Controls.Add(Me.btn_cancelar)
+        Me.GroupBox1.Controls.Add(Me.txt_email)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.GroupBox4)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.txt_nombre)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Controls.Add(Me.btn_guardar)
+        Me.GroupBox1.Controls.Add(Me.txt_ap)
         Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
+        Me.GroupBox1.Controls.Add(Me.txt_conf_pass)
+        Me.GroupBox1.Controls.Add(Me.txt_usu)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
+        Me.GroupBox1.Controls.Add(Me.txt_passw)
         Me.GroupBox1.Font = New System.Drawing.Font("Sitka Small", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(12, 107)
         Me.GroupBox1.Name = "GroupBox1"
@@ -184,24 +190,25 @@ Partial Class Registro
         Me.GroupBox1.TabIndex = 13
         Me.GroupBox1.TabStop = False
         '
-        'Button2
+        'btn_cancelar
         '
-        Me.Button2.Font = New System.Drawing.Font("Sitka Small", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(214, 310)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(160, 38)
-        Me.Button2.TabIndex = 28
-        Me.Button2.Text = "CANCELAR"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btn_cancelar.Font = New System.Drawing.Font("Sitka Small", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_cancelar.Location = New System.Drawing.Point(214, 310)
+        Me.btn_cancelar.Name = "btn_cancelar"
+        Me.btn_cancelar.Size = New System.Drawing.Size(160, 38)
+        Me.btn_cancelar.TabIndex = 28
+        Me.btn_cancelar.Text = "CANCELAR"
+        Me.btn_cancelar.UseVisualStyleBackColor = True
         '
-        'TextBox6
+        'txt_email
         '
-        Me.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox6.Location = New System.Drawing.Point(90, 156)
-        Me.TextBox6.Multiline = True
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(448, 20)
-        Me.TextBox6.TabIndex = 27
+        Me.txt_email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_email.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_email.Location = New System.Drawing.Point(90, 156)
+        Me.txt_email.Multiline = True
+        Me.txt_email.Name = "txt_email"
+        Me.txt_email.Size = New System.Drawing.Size(448, 20)
+        Me.txt_email.TabIndex = 27
         '
         'Label7
         '
@@ -290,22 +297,22 @@ Partial Class Registro
 
     End Sub
     Friend WithEvents GroupBox4 As GroupBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents txt_nombre As TextBox
+    Friend WithEvents btn_guardar As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents txt_conf_pass As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents txt_passw As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txt_usu As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txt_ap As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Button2 As Button
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents btn_cancelar As Button
+    Friend WithEvents txt_email As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents TextBox7 As TextBox
     Friend WithEvents TextBox8 As TextBox
