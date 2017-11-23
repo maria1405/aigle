@@ -27,21 +27,21 @@ Partial Class add_cursos
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.pic_cover = New System.Windows.Forms.PictureBox()
+        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.btn_cancelar = New System.Windows.Forms.Button()
+        Me.txt_name = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.btn_guardar = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txt_description = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txt_buscar = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pic_cover, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TextBox8
@@ -88,18 +88,18 @@ Partial Class add_cursos
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.GroupBox1.Controls.Add(Me.PictureBox2)
+        Me.GroupBox1.Controls.Add(Me.pic_cover)
         Me.GroupBox1.Controls.Add(Me.LinkLabel2)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.LinkLabel1)
-        Me.GroupBox1.Controls.Add(Me.Button2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.btn_cancelar)
+        Me.GroupBox1.Controls.Add(Me.txt_name)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Controls.Add(Me.btn_guardar)
         Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
+        Me.GroupBox1.Controls.Add(Me.txt_description)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
+        Me.GroupBox1.Controls.Add(Me.txt_buscar)
         Me.GroupBox1.Font = New System.Drawing.Font("Sitka Small", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(9, 111)
         Me.GroupBox1.Name = "GroupBox1"
@@ -107,79 +107,25 @@ Partial Class add_cursos
         Me.GroupBox1.TabIndex = 39
         Me.GroupBox1.TabStop = False
         '
-        'Button2
+        'pic_cover
         '
-        Me.Button2.Font = New System.Drawing.Font("Sitka Small", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(529, 403)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(160, 38)
-        Me.Button2.TabIndex = 28
-        Me.Button2.Text = "CANCELAR"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.pic_cover.Location = New System.Drawing.Point(243, 308)
+        Me.pic_cover.Name = "pic_cover"
+        Me.pic_cover.Size = New System.Drawing.Size(145, 87)
+        Me.pic_cover.TabIndex = 39
+        Me.pic_cover.TabStop = False
         '
-        'TextBox1
+        'LinkLabel2
         '
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Location = New System.Drawing.Point(212, 129)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(643, 20)
-        Me.TextBox1.TabIndex = 20
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(6, 22)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(169, 28)
-        Me.Label5.TabIndex = 18
-        Me.Label5.Text = "BUSCAR CURSO:"
-        '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("Sitka Small", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(695, 403)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(160, 38)
-        Me.Button1.TabIndex = 25
-        Me.Button1.Text = "GUARDAR CURSO"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(0, 162)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(271, 28)
-        Me.Label4.TabIndex = 17
-        Me.Label4.Text = "DESCRIPCIÓN DEL CURSO:"
-        '
-        'TextBox3
-        '
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox3.Location = New System.Drawing.Point(277, 170)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(578, 118)
-        Me.TextBox3.TabIndex = 22
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(0, 121)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(211, 28)
-        Me.Label2.TabIndex = 15
-        Me.Label2.Text = "TÍTULO DEL CURSO:"
-        '
-        'TextBox4
-        '
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox4.Location = New System.Drawing.Point(174, 27)
-        Me.TextBox4.Multiline = True
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(364, 20)
-        Me.TextBox4.TabIndex = 23
+        Me.LinkLabel2.AutoSize = True
+        Me.LinkLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel2.Font = New System.Drawing.Font("Arial Narrow", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel2.Location = New System.Drawing.Point(394, 311)
+        Me.LinkLabel2.Name = "LinkLabel2"
+        Me.LinkLabel2.Size = New System.Drawing.Size(127, 25)
+        Me.LinkLabel2.TabIndex = 38
+        Me.LinkLabel2.TabStop = True
+        Me.LinkLabel2.Text = "+Subir Archivo"
         '
         'Label3
         '
@@ -202,25 +148,82 @@ Partial Class add_cursos
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "+ Editar Curso"
         '
-        'LinkLabel2
+        'btn_cancelar
         '
-        Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel2.Font = New System.Drawing.Font("Arial Narrow", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel2.Location = New System.Drawing.Point(394, 311)
-        Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(127, 25)
-        Me.LinkLabel2.TabIndex = 38
-        Me.LinkLabel2.TabStop = True
-        Me.LinkLabel2.Text = "+Subir Archivo"
+        Me.btn_cancelar.Font = New System.Drawing.Font("Sitka Small", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_cancelar.Location = New System.Drawing.Point(529, 403)
+        Me.btn_cancelar.Name = "btn_cancelar"
+        Me.btn_cancelar.Size = New System.Drawing.Size(160, 38)
+        Me.btn_cancelar.TabIndex = 28
+        Me.btn_cancelar.Text = "CANCELAR"
+        Me.btn_cancelar.UseVisualStyleBackColor = True
         '
-        'PictureBox2
+        'txt_name
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(243, 308)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(145, 87)
-        Me.PictureBox2.TabIndex = 39
-        Me.PictureBox2.TabStop = False
+        Me.txt_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_name.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_name.Location = New System.Drawing.Point(212, 129)
+        Me.txt_name.Multiline = True
+        Me.txt_name.Name = "txt_name"
+        Me.txt_name.Size = New System.Drawing.Size(643, 20)
+        Me.txt_name.TabIndex = 20
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(6, 22)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(169, 28)
+        Me.Label5.TabIndex = 18
+        Me.Label5.Text = "BUSCAR CURSO:"
+        '
+        'btn_guardar
+        '
+        Me.btn_guardar.Font = New System.Drawing.Font("Sitka Small", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_guardar.Location = New System.Drawing.Point(695, 403)
+        Me.btn_guardar.Name = "btn_guardar"
+        Me.btn_guardar.Size = New System.Drawing.Size(160, 38)
+        Me.btn_guardar.TabIndex = 25
+        Me.btn_guardar.Text = "GUARDAR CURSO"
+        Me.btn_guardar.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(0, 162)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(271, 28)
+        Me.Label4.TabIndex = 17
+        Me.Label4.Text = "DESCRIPCIÓN DEL CURSO:"
+        '
+        'txt_description
+        '
+        Me.txt_description.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_description.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_description.Location = New System.Drawing.Point(277, 170)
+        Me.txt_description.Multiline = True
+        Me.txt_description.Name = "txt_description"
+        Me.txt_description.Size = New System.Drawing.Size(578, 118)
+        Me.txt_description.TabIndex = 22
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(0, 121)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(211, 28)
+        Me.Label2.TabIndex = 15
+        Me.Label2.Text = "TÍTULO DEL CURSO:"
+        '
+        'txt_buscar
+        '
+        Me.txt_buscar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_buscar.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_buscar.Location = New System.Drawing.Point(174, 27)
+        Me.txt_buscar.Multiline = True
+        Me.txt_buscar.Name = "txt_buscar"
+        Me.txt_buscar.Size = New System.Drawing.Size(364, 20)
+        Me.txt_buscar.TabIndex = 23
         '
         'add_cursos
         '
@@ -238,7 +241,7 @@ Partial Class add_cursos
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pic_cover, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -249,15 +252,15 @@ Partial Class add_cursos
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Button2 As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents btn_cancelar As Button
+    Friend WithEvents txt_name As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btn_guardar As Button
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txt_description As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents txt_buscar As TextBox
+    Friend WithEvents pic_cover As PictureBox
     Friend WithEvents LinkLabel2 As LinkLabel
     Friend WithEvents Label3 As Label
     Friend WithEvents LinkLabel1 As LinkLabel

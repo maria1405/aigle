@@ -9,7 +9,6 @@ Public Class Registro
 
     Private Sub btn_guardar_Click(sender As Object, e As EventArgs) Handles btn_guardar.Click
         Try
-
             If txt_conf_pass.Text = txt_passw.Text Then
                 csql.sentencia("INSERT INTO Users(name, last_name, email, username, role, password)
 VALUES('" & txt_nombre.Text & "','" & txt_ap.Text & "','" & txt_email.Text & "','" & txt_usu.Text & "','" & 0 & "','" & txt_passw.Text & "')")
@@ -24,15 +23,9 @@ VALUES('" & txt_nombre.Text & "','" & txt_ap.Text & "','" & txt_email.Text & "',
                 data = csql.sentencia("SELECT * FROM Users") 'TABLA VENTAS
             Else
                 MsgBox("CONFIRMA LA CONTRASEÑA")
-
             End If
-
-
-
         Catch ex As Exception
             MsgBox("ERROR EN LA SINTAXIS DE LOS CAMPOS" & ex.Message)
-
-
         End Try
     End Sub
 
