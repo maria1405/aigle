@@ -224,15 +224,5 @@
   <ItemGroup>
     <None Include="Resources\españoles.png" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Datos\Datos.vbproj">
-      <Project>{39bff091-2ff4-4349-aa06-74581813128c}</Project>
-      <Name>Datos</Name>
-    </ProjectReference>
-    <ProjectReference Include="Entidad\Entidad.vbproj">
-      <Project>{d08f6d1d-b480-4f78-971b-ebbe95c8fb45}</Project>
-      <Name>Entidad</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

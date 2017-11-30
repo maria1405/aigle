@@ -1,9 +1,14 @@
-﻿Imports Datos
-Imports Entidad
+﻿Imports System.Data.OleDb
 Public Class login
+    Dim ruta As String
+    Dim ds As New DataSet
+    Dim Conexion As OleDbConnection
+    Dim cadenaconexion As String
+    Public csql As New conexion
+    Dim data As New DataSet
 
-    Dim fu As New Fusuario
-    Dim eu As New Eusuario
+    'Dim dbcon As New OleDb.OleDbConnection
+    'Dim dbup As New OleDb.OleDbCommand
 
     Private Sub lnklbl_registrarse_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
         Me.Hide()
@@ -12,12 +17,10 @@ Public Class login
 
     Private Sub btn_enter_Click(sender As Object, e As EventArgs) Handles btn_enter.Click
         Try
-            If txt_password.Text = eu._username And txt_user.Text = eu._password Then
-                Dim dt As New DataTable
 
-                eu._username = txt_user.Text
-                eu._password = txt_password.Text
-                dt = fu.validationuser(eu)
+            data = csql.sentencia("Select * from Users where (username='" & txt_user.Text & "' And password ='" & txt_password.Text & "')")
+
+            If data.Tables(0).Rows.Count = 1 Then
                 Timer1.Start()
 
             Else
@@ -27,8 +30,10 @@ Public Class login
                 If tried = 5 Then
                     MsgBox("EL SISTEMA SE CERRARÁ, GRACIAS", MsgBoxStyle.Critical, "SISTEMA")
                 End If
-                MsgBox("no funciono ni madres fer")
-                End If
+            End If
+
+
+
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
@@ -39,7 +44,6 @@ Public Class login
         If ProgressBar1.Value = 100 Then
             Timer1.Enabled = False
             Me.Hide()
-            MsgBox("BIENVENIDO A AIGLE " & txt_user.Text)
             INDEX.Show()
         End If
     End Sub
