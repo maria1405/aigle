@@ -35,3 +35,10 @@ C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TA
 C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\bin\Debug\Maquetación.exe
 C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\bin\Debug\Maquetación.pdb
 C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\bin\Debug\Maquetación.xml
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\bin\Debug\Datos.dll
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\bin\Debug\Entidad.dll
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\bin\Debug\Datos.pdb
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\bin\Debug\Datos.xml
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\bin\Debug\Datos.dll.config
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\bin\Debug\Entidad.pdb
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\bin\Debug\Entidad.xml

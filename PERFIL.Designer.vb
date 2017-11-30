@@ -33,9 +33,9 @@ Partial Class PERFIL
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.lklbl_editar = New System.Windows.Forms.LinkLabel()
+        Me.btn_cancelar = New System.Windows.Forms.Button()
+        Me.btn_guardar = New System.Windows.Forms.Button()
         Me.GroupBox4.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -149,37 +149,37 @@ Partial Class PERFIL
         Me.Label3.TabIndex = 28
         Me.Label3.Text = "AQUI VA EL APELLIDO DEL USUARIO..."
         '
-        'LinkLabel2
+        'lklbl_editar
         '
-        Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel2.Font = New System.Drawing.Font("Arial Narrow", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel2.Location = New System.Drawing.Point(824, 104)
-        Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(78, 25)
-        Me.LinkLabel2.TabIndex = 27
-        Me.LinkLabel2.TabStop = True
-        Me.LinkLabel2.Text = "+ Editar "
+        Me.lklbl_editar.AutoSize = True
+        Me.lklbl_editar.BackColor = System.Drawing.Color.Transparent
+        Me.lklbl_editar.Font = New System.Drawing.Font("Arial Narrow", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lklbl_editar.Location = New System.Drawing.Point(824, 104)
+        Me.lklbl_editar.Name = "lklbl_editar"
+        Me.lklbl_editar.Size = New System.Drawing.Size(78, 25)
+        Me.lklbl_editar.TabIndex = 27
+        Me.lklbl_editar.TabStop = True
+        Me.lklbl_editar.Text = "+ Editar "
         '
-        'Button2
+        'btn_cancelar
         '
-        Me.Button2.Font = New System.Drawing.Font("Sitka Small", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(578, 355)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(160, 38)
-        Me.Button2.TabIndex = 36
-        Me.Button2.Text = "CANCELAR"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btn_cancelar.Font = New System.Drawing.Font("Sitka Small", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_cancelar.Location = New System.Drawing.Point(578, 355)
+        Me.btn_cancelar.Name = "btn_cancelar"
+        Me.btn_cancelar.Size = New System.Drawing.Size(160, 38)
+        Me.btn_cancelar.TabIndex = 36
+        Me.btn_cancelar.Text = "CANCELAR"
+        Me.btn_cancelar.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btn_guardar
         '
-        Me.Button1.Font = New System.Drawing.Font("Sitka Small", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(742, 355)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(160, 38)
-        Me.Button1.TabIndex = 35
-        Me.Button1.Text = "GUARDAR CAMBIOS"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btn_guardar.Font = New System.Drawing.Font("Sitka Small", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_guardar.Location = New System.Drawing.Point(742, 355)
+        Me.btn_guardar.Name = "btn_guardar"
+        Me.btn_guardar.Size = New System.Drawing.Size(160, 38)
+        Me.btn_guardar.TabIndex = 35
+        Me.btn_guardar.Text = "GUARDAR CAMBIOS"
+        Me.btn_guardar.UseVisualStyleBackColor = True
         '
         'PERFIL
         '
@@ -187,9 +187,9 @@ Partial Class PERFIL
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(913, 570)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.LinkLabel2)
+        Me.Controls.Add(Me.btn_cancelar)
+        Me.Controls.Add(Me.btn_guardar)
+        Me.Controls.Add(Me.lklbl_editar)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.TextBox8)
         Me.Controls.Add(Me.Label5)
@@ -221,7 +221,7 @@ Partial Class PERFIL
     Friend WithEvents Label4 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents LinkLabel2 As LinkLabel
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents lklbl_editar As LinkLabel
+    Friend WithEvents btn_cancelar As Button
+    Friend WithEvents btn_guardar As Button
 End Class

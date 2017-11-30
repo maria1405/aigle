@@ -1,6 +1,5 @@
 ﻿Public Class conexion
     Private cadena As String = "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=elearningtec;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
-    'FERNANDA: Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=elearningtec;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
 
     Private conexion As New SqlClient.SqlConnection(cadena)
     Public Function sentencia(ByVal sql As String) As DataSet

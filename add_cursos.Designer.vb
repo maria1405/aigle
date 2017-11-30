@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class add_cursos
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class add_cursos
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
@@ -30,7 +30,6 @@ Partial Class add_cursos
         Me.pic_cover = New System.Windows.Forms.PictureBox()
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.btn_cancelar = New System.Windows.Forms.Button()
         Me.txt_name = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -91,7 +90,6 @@ Partial Class add_cursos
         Me.GroupBox1.Controls.Add(Me.pic_cover)
         Me.GroupBox1.Controls.Add(Me.LinkLabel2)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.LinkLabel1)
         Me.GroupBox1.Controls.Add(Me.btn_cancelar)
         Me.GroupBox1.Controls.Add(Me.txt_name)
         Me.GroupBox1.Controls.Add(Me.Label5)
@@ -135,18 +133,6 @@ Partial Class add_cursos
         Me.Label3.Size = New System.Drawing.Size(231, 28)
         Me.Label3.TabIndex = 37
         Me.Label3.Text = "IMAGEN DE PORTADA:"
-        '
-        'LinkLabel1
-        '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel1.Font = New System.Drawing.Font("Arial Narrow", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel1.Location = New System.Drawing.Point(753, 27)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(125, 25)
-        Me.LinkLabel1.TabIndex = 36
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "+ Editar Curso"
         '
         'btn_cancelar
         '
@@ -263,5 +249,4 @@ Partial Class add_cursos
     Friend WithEvents pic_cover As PictureBox
     Friend WithEvents LinkLabel2 As LinkLabel
     Friend WithEvents Label3 As Label
-    Friend WithEvents LinkLabel1 As LinkLabel
 End Class

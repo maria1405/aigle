@@ -1,0 +1,14 @@
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\Datos\bin\Debug\Datos.dll.config
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\Datos\bin\Debug\Datos.dll
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\Datos\bin\Debug\Datos.pdb
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\Datos\bin\Debug\Datos.xml
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\Datos\bin\Debug\Entidad.dll
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\Datos\bin\Debug\Entidad.pdb
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\Datos\bin\Debug\Entidad.xml
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\Datos\obj\Debug\Datos.vbprojResolveAssemblyReference.cache
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\Datos\obj\Debug\Datos.Resources.resources
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\Datos\obj\Debug\Datos.vbproj.GenerateResource.Cache
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\Datos\obj\Debug\Datos.vbproj.CoreCompileInputs.cache
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\Datos\obj\Debug\Datos.dll
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\Datos\obj\Debug\Datos.xml
+C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\Datos\obj\Debug\Datos.pdb
