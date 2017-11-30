@@ -47,4 +47,9 @@ Public Class login
             INDEX.Show()
         End If
     End Sub
+
+    Private Sub lnklbl_registrarse_LinkClicked_1(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lnklbl_registrarse.LinkClicked
+        Me.Hide()
+        Registro.Show()
+    End Sub
 End Class
