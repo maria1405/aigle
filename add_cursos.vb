@@ -15,6 +15,9 @@ VALUES('" & txt_name.Text & "','" & txt_description.Text & "','" & 0 & "')")
             txt_name.Text = ""
             txt_description.Text = ""
             data = csql.sentencia("SELECT * FROM Courses") 'TABLA VENTAS
+            Me.Hide()
+            Cursos.Close()
+            Cursos.Show()
         Catch ex As Exception
             MsgBox("ERROR EN LA SINTAXIS DE LOS CAMPOS" & ex.Message)
         End Try

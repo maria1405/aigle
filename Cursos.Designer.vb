@@ -27,7 +27,7 @@ Partial Class Cursos
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.tablecourses = New System.Windows.Forms.TableLayoutPanel()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.linkaddcourse = New System.Windows.Forms.LinkLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -66,7 +66,7 @@ Partial Class Cursos
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.tablecourses)
-        Me.GroupBox2.Controls.Add(Me.LinkLabel1)
+        Me.GroupBox2.Controls.Add(Me.linkaddcourse)
         Me.GroupBox2.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(12, 122)
         Me.GroupBox2.Name = "GroupBox2"
@@ -89,17 +89,17 @@ Partial Class Cursos
         Me.tablecourses.Size = New System.Drawing.Size(796, 79)
         Me.tablecourses.TabIndex = 36
         '
-        'LinkLabel1
+        'linkaddcourse
         '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel1.Font = New System.Drawing.Font("Arial Narrow", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel1.Location = New System.Drawing.Point(763, 25)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(120, 25)
-        Me.LinkLabel1.TabIndex = 35
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "+ Crear curso"
+        Me.linkaddcourse.AutoSize = True
+        Me.linkaddcourse.BackColor = System.Drawing.Color.Transparent
+        Me.linkaddcourse.Font = New System.Drawing.Font("Arial Narrow", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.linkaddcourse.Location = New System.Drawing.Point(763, 25)
+        Me.linkaddcourse.Name = "linkaddcourse"
+        Me.linkaddcourse.Size = New System.Drawing.Size(120, 25)
+        Me.linkaddcourse.TabIndex = 35
+        Me.linkaddcourse.TabStop = True
+        Me.linkaddcourse.Text = "+ Crear curso"
         '
         'PictureBox1
         '
@@ -137,6 +137,6 @@ Partial Class Cursos
     Friend WithEvents TextBox7 As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents linkaddcourse As LinkLabel
     Friend WithEvents tablecourses As TableLayoutPanel
 End Class

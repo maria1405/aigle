@@ -28,4 +28,9 @@ Public Class Cursos
             MsgBox("ERROR EN LA SINTAXIS DE LOS CAMPOS" & ex.Message)
         End Try
     End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linkaddcourse.LinkClicked
+        Me.Hide()
+        add_cursos.Show()
+    End Sub
 End Class
