@@ -97,12 +97,6 @@
     <Compile Include="add_cursos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="INDEX.Designer.vb">
-      <DependentUpon>INDEX.vb</DependentUpon>
-    </Compile>
-    <Compile Include="INDEX.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Leccion.Designer.vb">
       <DependentUpon>Leccion.vb</DependentUpon>
     </Compile>
@@ -156,9 +150,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Curso.resx">
       <DependentUpon>Curso.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="INDEX.resx">
-      <DependentUpon>INDEX.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Leccion.resx">
       <DependentUpon>Leccion.vb</DependentUpon>

@@ -47,7 +47,6 @@ C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\ob
 C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.add_cursos.resources
 C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.Cursos.resources
 C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.Curso.resources
-C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.INDEX.resources
 C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.Leccion.resources
 C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.login.resources
 C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.Resources.resources

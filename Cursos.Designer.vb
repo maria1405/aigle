@@ -26,14 +26,11 @@ Partial Class Cursos
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.tablecourses = New System.Windows.Forms.TableLayoutPanel()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.LinkLabel6 = New System.Windows.Forms.LinkLabel()
         Me.GroupBox2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -68,7 +65,7 @@ Partial Class Cursos
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.TableLayoutPanel1)
+        Me.GroupBox2.Controls.Add(Me.tablecourses)
         Me.GroupBox2.Controls.Add(Me.LinkLabel1)
         Me.GroupBox2.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(12, 122)
@@ -77,6 +74,20 @@ Partial Class Cursos
         Me.GroupBox2.TabIndex = 36
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Cursos Disponibles"
+        '
+        'tablecourses
+        '
+        Me.tablecourses.AutoSize = True
+        Me.tablecourses.ColumnCount = 2
+        Me.tablecourses.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.tablecourses.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.tablecourses.Location = New System.Drawing.Point(43, 78)
+        Me.tablecourses.Name = "tablecourses"
+        Me.tablecourses.Padding = New System.Windows.Forms.Padding(25)
+        Me.tablecourses.RowCount = 1
+        Me.tablecourses.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.tablecourses.Size = New System.Drawing.Size(796, 79)
+        Me.tablecourses.TabIndex = 36
         '
         'LinkLabel1
         '
@@ -90,19 +101,6 @@ Partial Class Cursos
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "+ Crear curso"
         '
-        'LinkLabel2
-        '
-        Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel2.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel2.LinkColor = System.Drawing.Color.Black
-        Me.LinkLabel2.Location = New System.Drawing.Point(3, 0)
-        Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(288, 22)
-        Me.LinkLabel2.TabIndex = 34
-        Me.LinkLabel2.TabStop = True
-        Me.LinkLabel2.Text = "CURSO: NOMBRE DEL CURSO"
-        '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Maquetación.My.Resources.Resources.logo
@@ -112,33 +110,6 @@ Partial Class Cursos
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 31
         Me.PictureBox1.TabStop = False
-        '
-        'TableLayoutPanel1
-        '
-        Me.TableLayoutPanel1.ColumnCount = 2
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.LinkLabel6, 1, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.LinkLabel2, 0, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(43, 78)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 2
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(796, 79)
-        Me.TableLayoutPanel1.TabIndex = 36
-        '
-        'LinkLabel6
-        '
-        Me.LinkLabel6.AutoSize = True
-        Me.LinkLabel6.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel6.Font = New System.Drawing.Font("Arial Narrow", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel6.Location = New System.Drawing.Point(401, 0)
-        Me.LinkLabel6.Name = "LinkLabel6"
-        Me.LinkLabel6.Size = New System.Drawing.Size(125, 25)
-        Me.LinkLabel6.TabIndex = 39
-        Me.LinkLabel6.TabStop = True
-        Me.LinkLabel6.Text = "+ Editar Curso"
         '
         'Cursos
         '
@@ -157,8 +128,6 @@ Partial Class Cursos
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TableLayoutPanel1.ResumeLayout(False)
-        Me.TableLayoutPanel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -169,7 +138,5 @@ Partial Class Cursos
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents LinkLabel1 As LinkLabel
-    Friend WithEvents LinkLabel2 As LinkLabel
-    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
-    Friend WithEvents LinkLabel6 As LinkLabel
+    Friend WithEvents tablecourses As TableLayoutPanel
 End Class
