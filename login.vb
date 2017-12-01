@@ -44,7 +44,7 @@ Public Class login
         If ProgressBar1.Value = 100 Then
             Timer1.Enabled = False
             Me.Hide()
-            INDEX.Show()
+            Cursos.Show()
         End If
     End Sub
 

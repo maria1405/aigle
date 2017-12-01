@@ -35,3 +35,22 @@ C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TA
 C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\bin\Debug\Maquetación.exe
 C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\bin\Debug\Maquetación.pdb
 C:\Users\Maria Fernanda\Desktop\PRACTICAS VISUAL_FUNDAMENTOS DE PROG\UNIDAD 4\TAREA INTEGRADORA\Maquetación\bin\Debug\Maquetación.xml
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\bin\Debug\Maquetación.exe.config
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.exe
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.xml
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.pdb
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\bin\Debug\Maquetación.exe
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\bin\Debug\Maquetación.pdb
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\bin\Debug\Maquetación.xml
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.vbprojResolveAssemblyReference.cache
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.addlesson.resources
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.add_cursos.resources
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.Cursos.resources
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.Curso.resources
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.INDEX.resources
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.Leccion.resources
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.login.resources
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.Resources.resources
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.PERFIL.resources
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.Registro.resources
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.vbproj.GenerateResource.Cache
