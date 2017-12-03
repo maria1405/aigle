@@ -1,11 +1,37 @@
-﻿Public Class Leccion
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Cursos.Show()
-        Me.Hide()
+﻿Imports System.Data.OleDb
+Public Class Leccion
+    Dim userId As Integer
+    Dim idLesson As Integer
+    Dim lesson As DataSet
+    Dim Conexion As OleDbConnection
+    Dim cadenaconexion As String
+    Public csql As New conexion
+    Public Sub New(ByVal userIdParameter As Integer, ByVal LessonId As Integer)
+
+        ' Esta llamada es exigida por el diseñador.
+        InitializeComponent()
+        idLesson = LessonId
+        ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
 
     End Sub
 
-    Private Sub Ingles_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Leccion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Try
+            lesson = csql.sentencia("SELECT * FROM Lessons WHERE (id='" & idLesson & "')")
+            lessonDescrition.Text = lesson.Tables(0).Rows(0)(2)
+            Me.Text = lesson.Tables(0).Rows(0)(1)
+            lessonTitle.Text = Me.Text
+        Catch ex As Exception
+            MsgBox("Tuvimos un error al cargar los datos, ¿nos perdonas?")
+            Dim courses As New Cursos(userId)
+            courses.Show()
+            Me.Hide()
+        End Try
+    End Sub
 
+    Private Sub backToCourse_Click(sender As Object, e As EventArgs) Handles backToCourse.Click
+        Dim course As New Curso(userId, lesson.Tables(0).Rows(0)(6))
+        course.Show()
+        Me.Hide()
     End Sub
 End Class

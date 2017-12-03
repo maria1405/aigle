@@ -17,12 +17,9 @@ Public Class login
 
     Private Sub btn_enter_Click(sender As Object, e As EventArgs) Handles btn_enter.Click
         Try
-
             data = csql.sentencia("Select * from Users where (username='" & txt_user.Text & "' And password ='" & txt_password.Text & "')")
-
             If data.Tables(0).Rows.Count = 1 Then
                 Timer1.Start()
-
             Else
                 Static tried As Integer
                 tried = tried + 1
@@ -31,9 +28,6 @@ Public Class login
                     MsgBox("EL SISTEMA SE CERRARÁ, GRACIAS", MsgBoxStyle.Critical, "SISTEMA")
                 End If
             End If
-
-
-
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
@@ -44,7 +38,8 @@ Public Class login
         If ProgressBar1.Value = 100 Then
             Timer1.Enabled = False
             Me.Hide()
-            Cursos.Show()
+            Dim misCursos As New Cursos(data.Tables(0).Rows(0)(0))
+            misCursos.Show()
         End If
     End Sub
 

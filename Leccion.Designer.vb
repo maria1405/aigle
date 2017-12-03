@@ -22,28 +22,17 @@ Partial Class Leccion
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lessonTitle = New System.Windows.Forms.Label()
         Me.LinkLabel7 = New System.Windows.Forms.LinkLabel()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.lessonDescrition = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.backToCourse = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.White
-        Me.Button2.BackgroundImage = Global.Maquetación.My.Resources.Resources.Home_300x300
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button2.Location = New System.Drawing.Point(1157, 12)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(78, 73)
-        Me.Button2.TabIndex = 28
-        Me.Button2.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
@@ -55,15 +44,14 @@ Partial Class Leccion
         Me.PictureBox1.TabIndex = 47
         Me.PictureBox1.TabStop = False
         '
-        'Label2
+        'lessonTitle
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Arial", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 41)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(679, 44)
-        Me.Label2.TabIndex = 45
-        Me.Label2.Text = "AQUÍ VA EL TÍTULO DE LA  LECCIÓN"
+        Me.lessonTitle.AutoSize = True
+        Me.lessonTitle.Font = New System.Drawing.Font("Arial", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lessonTitle.Location = New System.Drawing.Point(12, 41)
+        Me.lessonTitle.Name = "lessonTitle"
+        Me.lessonTitle.Size = New System.Drawing.Size(0, 44)
+        Me.lessonTitle.TabIndex = 45
         '
         'LinkLabel7
         '
@@ -96,15 +84,15 @@ Partial Class Leccion
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "CONTENIDO"
         '
-        'TextBox3
+        'lessonDescrition
         '
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox3.Location = New System.Drawing.Point(20, 137)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(557, 90)
-        Me.TextBox3.TabIndex = 50
-        Me.TextBox3.Text = "DESCRIPCIÓN DE LA LECCIÓN"
+        Me.lessonDescrition.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lessonDescrition.Enabled = False
+        Me.lessonDescrition.Location = New System.Drawing.Point(20, 137)
+        Me.lessonDescrition.Multiline = True
+        Me.lessonDescrition.Name = "lessonDescrition"
+        Me.lessonDescrition.Size = New System.Drawing.Size(557, 90)
+        Me.lessonDescrition.TabIndex = 50
         '
         'TextBox1
         '
@@ -125,21 +113,30 @@ Partial Class Leccion
         Me.Button3.Text = "ENVÍAR"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'backToCourse
+        '
+        Me.backToCourse.AutoSize = True
+        Me.backToCourse.Location = New System.Drawing.Point(767, 72)
+        Me.backToCourse.Name = "backToCourse"
+        Me.backToCourse.Size = New System.Drawing.Size(90, 13)
+        Me.backToCourse.TabIndex = 53
+        Me.backToCourse.Text = "Regresar al curso"
+        '
         'Leccion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(913, 570)
+        Me.Controls.Add(Me.backToCourse)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.lessonDescrition)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lessonTitle)
         Me.Controls.Add(Me.LinkLabel7)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Button2)
         Me.Name = "Leccion"
         Me.Text = "LECCION"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
@@ -148,13 +145,13 @@ Partial Class Leccion
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button2 As Button
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label2 As Label
+    Friend WithEvents lessonTitle As Label
     Friend WithEvents LinkLabel7 As LinkLabel
     Friend WithEvents Button1 As Button
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents lessonDescrition As TextBox
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button3 As Button
+    Friend WithEvents backToCourse As Label
 End Class
