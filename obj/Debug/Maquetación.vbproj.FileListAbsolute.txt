@@ -53,3 +53,8 @@ C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\ob
 C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.PERFIL.resources
 C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.Registro.resources
 C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.vbproj.GenerateResource.Cache
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\bin\Debug\Interop.ShockwaveFlashObjects.dll
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Interop.ShockwaveFlashObjects.dll
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.vbproj.ResolveComReference.cache

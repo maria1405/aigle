@@ -6,35 +6,31 @@ Public Class Registro
     Dim cadenaconexion As String
     Public csql As New conexion
     Dim data As New DataSet
-
+    Dim dt As New DataSet
     Private Sub btn_guardar_Click(sender As Object, e As EventArgs) Handles btn_guardar.Click
         Try
-            If txt_conf_pass.Text = txt_passw.Text Then
-                csql.sentencia("INSERT INTO Users(name, last_name, email, username, role, password)
-VALUES('" & txt_nombre.Text & "','" & txt_ap.Text & "','" & txt_email.Text & "','" & txt_usu.Text & "','" & 0 & "','" & txt_passw.Text & "')")
-                MsgBox("REGÍSTRADO CORRECTAMENTE")
-                'limpiar
-                txt_ap.Text = ""
-                txt_conf_pass.Text = ""
-                txt_email.Text = ""
-                txt_nombre.Text = ""
-                txt_passw.Text = ""
-                txt_usu.Text = ""
-                data = csql.sentencia("SELECT * FROM Users") 'TABLA VENTAS
+            dt = csql.sentencia("SELECT username FROM Users WHERE (username Like '" & txt_usu.Text & "')")
+            If dt.Tables(0).Rows.Count >= 1 Then
+                MsgBox("Lo sentimos, el nombre de usuario ya exite.")
             Else
-                MsgBox("CONFIRMA LA CONTRASEÑA")
+                If txt_conf_pass.Text = txt_passw.Text Then
+                    csql.sentencia("INSERT INTO Users(name, last_name, email, username, role, password)
+VALUES('" & txt_nombre.Text & "','" & txt_ap.Text & "','" & txt_email.Text & "','" & txt_usu.Text & "','" & 0 & "','" & txt_passw.Text & "')")
+                    data = csql.sentencia("SELECT * FROM Users WHERE(username='" & txt_usu.Text & "' and email='" & txt_email.Text & "' and password='" & txt_passw.Text & "')")
+                    Dim courses As New Cursos(data.Tables(0).Rows(0)(0))
+                    courses.Show()
+                    Me.Close()
+                Else
+                    MsgBox("Tus contraseñas no coinciden.")
+                End If
             End If
         Catch ex As Exception
-            MsgBox("ERROR EN LA SINTAXIS DE LOS CAMPOS" & ex.Message)
+            MsgBox("Tuvimos un error, trabajamos en solucionarlo pronto. ")
         End Try
     End Sub
 
     Private Sub btn_cancelar_Click(sender As Object, e As EventArgs) Handles btn_cancelar.Click
-        txt_ap.Text = ""
-        txt_conf_pass.Text = ""
-        txt_email.Text = ""
-        txt_nombre.Text = ""
-        txt_passw.Text = ""
-        txt_usu.Text = ""
+        login.Show()
+        Me.Close()
     End Sub
 End Class

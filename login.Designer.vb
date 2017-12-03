@@ -78,10 +78,10 @@ Partial Class login
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(104, 202)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(227, 29)
+        Me.Label3.Size = New System.Drawing.Size(221, 22)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "¿No te has registrado?"
         '
@@ -89,10 +89,10 @@ Partial Class login
         '
         Me.lnklbl_registrarse.AutoSize = True
         Me.lnklbl_registrarse.BackColor = System.Drawing.Color.Transparent
-        Me.lnklbl_registrarse.Font = New System.Drawing.Font("Arial Narrow", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lnklbl_registrarse.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lnklbl_registrarse.Location = New System.Drawing.Point(165, 231)
         Me.lnklbl_registrarse.Name = "lnklbl_registrarse"
-        Me.lnklbl_registrarse.Size = New System.Drawing.Size(99, 25)
+        Me.lnklbl_registrarse.Size = New System.Drawing.Size(112, 22)
         Me.lnklbl_registrarse.TabIndex = 5
         Me.lnklbl_registrarse.TabStop = True
         Me.lnklbl_registrarse.Text = "Regístrarte"
@@ -101,7 +101,7 @@ Partial Class login
         '
         Me.btn_enter.BackColor = System.Drawing.Color.Transparent
         Me.btn_enter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btn_enter.Font = New System.Drawing.Font("Arial Narrow", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_enter.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_enter.Location = New System.Drawing.Point(131, 137)
         Me.btn_enter.Name = "btn_enter"
         Me.btn_enter.Size = New System.Drawing.Size(177, 36)
@@ -113,10 +113,10 @@ Partial Class login
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(51, 79)
+        Me.Label2.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(47, 79)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(122, 29)
+        Me.Label2.Size = New System.Drawing.Size(144, 29)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Contraseña"
         '
@@ -124,30 +124,32 @@ Partial Class login
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(73, 32)
+        Me.Label1.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(69, 32)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(86, 29)
+        Me.Label1.Size = New System.Drawing.Size(102, 29)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Usuario"
         '
         'txt_password
         '
         Me.txt_password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_password.Location = New System.Drawing.Point(179, 88)
+        Me.txt_password.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_password.Location = New System.Drawing.Point(197, 79)
         Me.txt_password.Multiline = True
         Me.txt_password.Name = "txt_password"
         Me.txt_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txt_password.Size = New System.Drawing.Size(192, 20)
+        Me.txt_password.Size = New System.Drawing.Size(181, 29)
         Me.txt_password.TabIndex = 1
         '
         'txt_user
         '
         Me.txt_user.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_user.Location = New System.Drawing.Point(170, 41)
+        Me.txt_user.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_user.Location = New System.Drawing.Point(177, 32)
         Me.txt_user.Multiline = True
         Me.txt_user.Name = "txt_user"
-        Me.txt_user.Size = New System.Drawing.Size(201, 20)
+        Me.txt_user.Size = New System.Drawing.Size(201, 29)
         Me.txt_user.TabIndex = 0
         '
         'PictureBox1
@@ -170,11 +172,11 @@ Partial Class login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(929, 609)
+        Me.ClientSize = New System.Drawing.Size(919, 563)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.MinimumSize = New System.Drawing.Size(929, 609)
+        Me.MinimumSize = New System.Drawing.Size(909, 524)
         Me.Name = "login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "AIGLE_LOGIN"

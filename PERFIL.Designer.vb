@@ -22,53 +22,23 @@ Partial Class PERFIL
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.lklbl_editar = New System.Windows.Forms.LinkLabel()
-        Me.btn_cancelar = New System.Windows.Forms.Button()
-        Me.btn_guardar = New System.Windows.Forms.Button()
-        Me.GroupBox4.SuspendLayout()
+        Me.lblmail = New System.Windows.Forms.Label()
+        Me.lblusername = New System.Windows.Forms.Label()
+        Me.lblname = New System.Windows.Forms.Label()
+        Me.btnircursos = New System.Windows.Forms.Button()
+        Me.Label3lbllastname = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'GroupBox4
-        '
-        Me.GroupBox4.BackColor = System.Drawing.Color.Transparent
-        Me.GroupBox4.BackgroundImage = Global.Maquetación.My.Resources.Resources.profile
-        Me.GroupBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.GroupBox4.Controls.Add(Me.LinkLabel1)
-        Me.GroupBox4.Location = New System.Drawing.Point(12, 122)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(255, 280)
-        Me.GroupBox4.TabIndex = 1
-        Me.GroupBox4.TabStop = False
-        '
-        'LinkLabel1
-        '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel1.Font = New System.Drawing.Font("Arial Narrow", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel1.Location = New System.Drawing.Point(6, 238)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(58, 25)
-        Me.LinkLabel1.TabIndex = 26
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Editar"
         '
         'TextBox8
         '
         Me.TextBox8.BackColor = System.Drawing.Color.Gray
         Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox8.Location = New System.Drawing.Point(-9, 82)
+        Me.TextBox8.Location = New System.Drawing.Point(-9, 99)
         Me.TextBox8.Multiline = True
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(927, 10)
@@ -78,7 +48,7 @@ Partial Class PERFIL
         '
         Me.TextBox7.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox7.Location = New System.Drawing.Point(-9, 66)
+        Me.TextBox7.Location = New System.Drawing.Point(-9, 83)
         Me.TextBox7.Multiline = True
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(927, 10)
@@ -104,82 +74,55 @@ Partial Class PERFIL
         Me.Label1.TabIndex = 32
         Me.Label1.Text = "PERFIL"
         '
-        'Label7
+        'lblmail
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(287, 205)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(189, 13)
-        Me.Label7.TabIndex = 31
-        Me.Label7.Text = "AQUI VA EL E-MAIL DEL USUARIO..."
+        Me.lblmail.AutoSize = True
+        Me.lblmail.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblmail.Location = New System.Drawing.Point(66, 221)
+        Me.lblmail.Name = "lblmail"
+        Me.lblmail.Size = New System.Drawing.Size(268, 18)
+        Me.lblmail.TabIndex = 31
+        Me.lblmail.Text = "AQUI VA EL E-MAIL DEL USUARIO..."
         '
-        'Label5
+        'lblusername
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(287, 273)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(231, 13)
-        Me.Label5.TabIndex = 30
-        Me.Label5.Text = "AQUI VA LA CONTRASEÑA DEL USUARIO ..."
+        Me.lblusername.AutoSize = True
+        Me.lblusername.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblusername.Location = New System.Drawing.Point(66, 255)
+        Me.lblusername.Name = "lblusername"
+        Me.lblusername.Size = New System.Drawing.Size(324, 18)
+        Me.lblusername.TabIndex = 29
+        Me.lblusername.Text = "AQUÍ VA EL PSEUDÓNIMO DEL USUARIO..."
         '
-        'Label4
+        'lblname
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(287, 239)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(227, 13)
-        Me.Label4.TabIndex = 29
-        Me.Label4.Text = "AQUÍ VA EL PSEUDÓNIMO DEL USUARIO..."
+        Me.lblname.AutoSize = True
+        Me.lblname.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblname.Location = New System.Drawing.Point(66, 150)
+        Me.lblname.Name = "lblname"
+        Me.lblname.Size = New System.Drawing.Size(77, 18)
+        Me.lblname.TabIndex = 27
+        Me.lblname.Text = "NOMBRE"
         '
-        'Label2
+        'btnircursos
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(287, 134)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(204, 13)
-        Me.Label2.TabIndex = 27
-        Me.Label2.Text = "AQUI VA EL NOMBRE DEL USUARIO...."
+        Me.btnircursos.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnircursos.Location = New System.Drawing.Point(753, 364)
+        Me.btnircursos.Name = "btnircursos"
+        Me.btnircursos.Size = New System.Drawing.Size(139, 38)
+        Me.btnircursos.TabIndex = 36
+        Me.btnircursos.Text = "Ver Mis Cursos"
+        Me.btnircursos.UseVisualStyleBackColor = True
         '
-        'Label3
+        'Label3lbllastname
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(287, 169)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(206, 13)
-        Me.Label3.TabIndex = 28
-        Me.Label3.Text = "AQUI VA EL APELLIDO DEL USUARIO..."
-        '
-        'lklbl_editar
-        '
-        Me.lklbl_editar.AutoSize = True
-        Me.lklbl_editar.BackColor = System.Drawing.Color.Transparent
-        Me.lklbl_editar.Font = New System.Drawing.Font("Arial Narrow", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lklbl_editar.Location = New System.Drawing.Point(824, 104)
-        Me.lklbl_editar.Name = "lklbl_editar"
-        Me.lklbl_editar.Size = New System.Drawing.Size(78, 25)
-        Me.lklbl_editar.TabIndex = 27
-        Me.lklbl_editar.TabStop = True
-        Me.lklbl_editar.Text = "+ Editar "
-        '
-        'btn_cancelar
-        '
-        Me.btn_cancelar.Font = New System.Drawing.Font("Sitka Small", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_cancelar.Location = New System.Drawing.Point(578, 355)
-        Me.btn_cancelar.Name = "btn_cancelar"
-        Me.btn_cancelar.Size = New System.Drawing.Size(160, 38)
-        Me.btn_cancelar.TabIndex = 36
-        Me.btn_cancelar.Text = "CANCELAR"
-        Me.btn_cancelar.UseVisualStyleBackColor = True
-        '
-        'btn_guardar
-        '
-        Me.btn_guardar.Font = New System.Drawing.Font("Sitka Small", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_guardar.Location = New System.Drawing.Point(742, 355)
-        Me.btn_guardar.Name = "btn_guardar"
-        Me.btn_guardar.Size = New System.Drawing.Size(160, 38)
-        Me.btn_guardar.TabIndex = 35
-        Me.btn_guardar.Text = "GUARDAR CAMBIOS"
-        Me.btn_guardar.UseVisualStyleBackColor = True
+        Me.Label3lbllastname.AutoSize = True
+        Me.Label3lbllastname.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3lbllastname.Location = New System.Drawing.Point(66, 185)
+        Me.Label3lbllastname.Name = "Label3lbllastname"
+        Me.Label3lbllastname.Size = New System.Drawing.Size(294, 18)
+        Me.Label3lbllastname.TabIndex = 28
+        Me.Label3lbllastname.Text = "AQUI VA EL APELLIDO DEL USUARIO..."
         '
         'PERFIL
         '
@@ -187,41 +130,30 @@ Partial Class PERFIL
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(913, 570)
-        Me.Controls.Add(Me.btn_cancelar)
-        Me.Controls.Add(Me.btn_guardar)
-        Me.Controls.Add(Me.lklbl_editar)
-        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.btnircursos)
+        Me.Controls.Add(Me.lblmail)
         Me.Controls.Add(Me.TextBox8)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.GroupBox4)
-        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.lblusername)
         Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lblname)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label3lbllastname)
         Me.Controls.Add(Me.Label1)
         Me.Name = "PERFIL"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PERFIL"
-        Me.GroupBox4.ResumeLayout(False)
-        Me.GroupBox4.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents LinkLabel1 As LinkLabel
-    Friend WithEvents GroupBox4 As GroupBox
     Friend WithEvents TextBox8 As TextBox
     Friend WithEvents TextBox7 As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents lklbl_editar As LinkLabel
-    Friend WithEvents btn_cancelar As Button
-    Friend WithEvents btn_guardar As Button
+    Friend WithEvents lblmail As Label
+    Friend WithEvents lblusername As Label
+    Friend WithEvents lblname As Label
+    Friend WithEvents btnircursos As Button
+    Friend WithEvents Label3lbllastname As Label
 End Class

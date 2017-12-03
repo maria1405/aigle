@@ -6,18 +6,37 @@ Public Class addlesson
     Dim cadenaconexion As String
     Public csql As New conexion
     Dim data As New DataSet
+    Dim idCourse, userId As Integer
+
+    Public Sub New(ByVal userIdParameter As Integer, ByVal idCourseParameter As Integer)
+
+        ' Esta llamada es exigida por el diseñador.
+        InitializeComponent()
+        userId = userIdParameter
+        idCourse = idCourseParameter
+        ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
+
+    End Sub
 
     Private Sub btn_guardar_Click(sender As Object, e As EventArgs) Handles btn_guardar.Click
         Try
-            csql.sentencia("INSERT INTO Lessons(name, description, cover)
-VALUES('" & txt_name.Text & "','" & txt_description.Text & "','" & 0 & "')")
-            MsgBox("REGÍSTRADO CORRECTAMENTE")
+            csql.sentencia("INSERT INTO Lessons(name, description, cover, course_id)
+VALUES('" & txt_name.Text & "','" & txt_description.Text & "','" & 0 & "', '" & idCourse & "')")
             'limpiar
             txt_name.Text = ""
             txt_description.Text = ""
-            data = csql.sentencia("SELECT * FROM Lessons") 'TABLA VENTAS
+            Dim course As New Curso(userId, idCourse)
+            course.Refresh()
+            course.Show()
+            Me.Close()
         Catch ex As Exception
-            MsgBox("ERROR EN LA SINTAXIS DE LOS CAMPOS" & ex.Message)
+            MsgBox("Tuvimos un error, trabajamos en solucionarlo.")
         End Try
+    End Sub
+
+    Private Sub btn_cancelar_Click(sender As Object, e As EventArgs) Handles btn_cancelar.Click
+        Dim course As New Curso(userId, idCourse)
+        course.Show()
+        Me.Close()
     End Sub
 End Class

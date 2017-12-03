@@ -48,4 +48,11 @@ Public Class Cursos
     Protected Overrides Sub Finalize()
         MyBase.Finalize()
     End Sub
+
+    Private Sub backToCourse_Click(sender As Object, e As EventArgs) Handles backToCourse.Click
+        Dim login As New login()
+        login.Refresh()
+        login.Show()
+        Me.Close()
+    End Sub
 End Class

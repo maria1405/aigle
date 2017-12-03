@@ -37,9 +37,9 @@ Public Class login
         ProgressBar1.Increment(5)
         If ProgressBar1.Value = 100 Then
             Timer1.Enabled = False
-            Me.Hide()
             Dim misCursos As New Cursos(data.Tables(0).Rows(0)(0))
             misCursos.Show()
+            Me.Hide()
         End If
     End Sub
 
@@ -47,4 +47,7 @@ Public Class login
         Me.Hide()
         Registro.Show()
     End Sub
+
+
+
 End Class

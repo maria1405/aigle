@@ -11,6 +11,7 @@ Public Class Leccion
         ' Esta llamada es exigida por el diseñador.
         InitializeComponent()
         idLesson = LessonId
+        userId = userIdParameter
         ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
 
     End Sub
@@ -33,5 +34,9 @@ Public Class Leccion
         Dim course As New Curso(userId, lesson.Tables(0).Rows(0)(6))
         course.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub lblactualizar_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lblactualizar.LinkClicked
+        '' Aquí debemos de llamar a addLesson en su versión de actualizar su contenido.
     End Sub
 End Class

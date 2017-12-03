@@ -15,13 +15,6 @@ Public Class Curso
         ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs)
-        Dim Cursos As New Cursos("")
-        Cursos.Refresh()
-        Cursos.Show()
-        Me.Hide()
-    End Sub
-
     Private Sub Curso_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             data = csql.sentencia("SELECT * FROM Courses WHERE (id='" & courseId & "')")
@@ -52,9 +45,15 @@ Public Class Curso
         Me.Hide()
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles lblvolcursos.Click
         Dim courses As New Cursos(userId)
         courses.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub addLesson_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles addLesson.LinkClicked
+        Dim addLesson As New addlesson(userId, courseId)
+        addLesson.Show()
+        Me.Close()
     End Sub
 End Class
