@@ -34,7 +34,7 @@ Public Class addlesson
                 course.Show()
                 Me.Close()
             Catch ex As Exception
-                MsgBox("Tuvimos un error, trabajamos en solucionarlo.", "Aigle | e-Learning")
+                MessageBox.Show("Tuvimos un error, trabajamos en solucionarlo.", "Aigle | e-Learning")
             End Try
         ElseIf isNew = False Then
             csql.sentencia("UPDATE Lessons SET name ='" & txt_name.Text & "', description='" & txt_description.Text & "', url_video='" & txt_url.Text & "' WHERE (id='" & idLesson & "')")
@@ -42,7 +42,7 @@ Public Class addlesson
             course.Refresh()
             course.Show()
             Me.Hide()
-            MsgBox("Se ha actualizado exitosamente.", "Aigle | e-Learning")
+            MessageBox.Show("Se ha actualizado exitosamente.", "Aigle | e-Learning")
         End If
 
     End Sub

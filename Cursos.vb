@@ -56,7 +56,7 @@ Public Class Cursos
                 End If
             Next
         Catch ex As Exception
-            MsgBox("Tuvimos un problema al resolver la petición.", "Aigle | e-Learning")
+            MessageBox.Show("Tuvimos un problema al resolver la petición.", "Aigle | e-Learning")
         End Try
     End Sub
     Private Sub editHandler(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -66,7 +66,7 @@ Public Class Cursos
             editCourse.Show()
             Me.Close()
         Catch ex As Exception
-            MsgBox("Tuvimos un problemas, trabajamos en solucionarlo.", "Aigle | e-Learning")
+            MessageBox.Show("Tuvimos un problemas, trabajamos en solucionarlo.", "Aigle | e-Learning")
         End Try
     End Sub
     Private Sub destroyHandler(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -77,9 +77,9 @@ Public Class Cursos
             Me.Close()
             cursos.Refresh()
             cursos.Show()
-            MsgBox("Se eliminó correctamente el curso.", "Aigle | e-Learning")
+            MessageBox.Show("Se eliminó correctamente el curso.", "Aigle | e-Learning")
         Catch ex As Exception
-            MsgBox("Tuvimos un error, trabajamos en solucionarlo.", "Aigle | e-Learning")
+            MessageBox.Show("Tuvimos un error, trabajamos en solucionarlo.", "Aigle | e-Learning")
         End Try
     End Sub
     Private Sub myClickHandler(ByVal sender As System.Object, ByVal e As System.EventArgs)

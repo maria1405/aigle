@@ -19,6 +19,7 @@ Public Class Leccion
     End Sub
 
     Private Sub Leccion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        lblactualizar.Visible = isAdmin
         Try
             lesson = csql.sentencia("SELECT * FROM Lessons WHERE (id='" & idLesson & "')")
             lessonDescrition.Text = lesson.Tables(0).Rows(0)(2)
@@ -28,7 +29,7 @@ Public Class Leccion
             ' video.Movie = lesson.Tables(0).Rows(0)(3)
 
         Catch ex As Exception
-            MsgBox("Tuvimos un error al cargar los datos, ¿nos perdonas?", "Aigle | e-Learning")
+            MessageBox.Show("Tuvimos un error al cargar los datos, ¿nos perdonas?", "Aigle | e-Learning")
             Dim courses As New Cursos(userId, isAdmin)
             courses.Show()
             Me.Hide()
@@ -46,6 +47,6 @@ Public Class Leccion
         Dim addLesson As New addlesson(userId, lesson.Tables(0).Rows(0)(4), isAdmin, False, idLesson)
         addLesson.Refresh()
         addLesson.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 End Class

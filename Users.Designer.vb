@@ -77,7 +77,7 @@ Partial Class Users
         Me.userstable.ColumnCount = 3
         Me.userstable.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.48458!))
         Me.userstable.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.51542!))
-        Me.userstable.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 141.0!))
+        Me.userstable.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 142.0!))
         Me.userstable.Location = New System.Drawing.Point(45, 163)
         Me.userstable.Name = "userstable"
         Me.userstable.RowCount = 1
@@ -109,6 +109,7 @@ Partial Class Users
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.title)
         Me.Name = "Users"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Users"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

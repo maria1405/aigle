@@ -11,7 +11,7 @@
             conexion.Close()
             Return ds
         Catch ex As Exception
-            MsgBox("Tuvimos un problema al resolver la petición.", "Aigle | e-Learning")
+            MessageBox.Show("Tuvimos un problema al resolver la petición.", "Aigle | e-Learning")
             Return Nothing
         End Try
     End Function

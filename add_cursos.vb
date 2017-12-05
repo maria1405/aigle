@@ -35,7 +35,7 @@ VALUES('" & txt_name.Text & "','" & txt_description.Text & "','" & userId & "')"
                 Cursos.Refresh()
                 Cursos.Show()
             Catch ex As Exception
-                MsgBox("ERROR EN LA SINTAXIS DE LOS CAMPOS" & ex.Message, "Aigle | e-Learning")
+                MessageBox.Show("ERROR EN LA SINTAXIS DE LOS CAMPOS" & ex.Message, "Aigle | e-Learning")
             End Try
         ElseIf isNew = False Then
             csql.sentencia("UPDATE Courses SET name ='" & txt_name.Text & "', description='" & txt_description.Text & "' WHERE (id='" & idCourse & "')")
@@ -43,7 +43,7 @@ VALUES('" & txt_name.Text & "','" & txt_description.Text & "','" & userId & "')"
             courses.Refresh()
             courses.Show()
             Me.Close()
-            MsgBox("Se ha actualizado exitosamente.", "Aigle | e-Learning")
+            MessageBox.Show("Se ha actualizado exitosamente.", "Aigle | e-Learning")
         End If
     End Sub
 

@@ -23,13 +23,13 @@ Public Class login
             Else
                 Static tried As Integer
                 tried = tried + 1
-                MsgBox("ESTIMADO USUARIO, TIENES " & (5 - tried) & " INTENTOS PARA PROBAR QUE ES EL USUARIO CORRECTO", "Aigle | e-Learning")
+                MessageBox.Show("ESTIMADO USUARIO, TIENES " & (5 - tried) & " INTENTOS PARA PROBAR QUE ES EL USUARIO CORRECTO", "Aigle | e-Learning")
                 If tried = 5 Then
-                    MsgBox("EL SISTEMA SE CERRARÁ, GRACIAS", MsgBoxStyle.Critical, "Aigle | e-Learning")
+                    MessageBox.Show("EL SISTEMA SE CERRARÁ, GRACIAS", "Aigle | e-Learning")
                 End If
             End If
         Catch ex As Exception
-            MsgBox("Error detectado", "Aigle | e-Learning")
+            MessageBox.Show("Error detectado", "Aigle | e-Learning")
         End Try
     End Sub
 

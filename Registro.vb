@@ -12,7 +12,7 @@ Public Class Registro
         Try
             dt = csql.sentencia("SELECT username FROM Users WHERE (username Like '" & txt_usu.Text & "')")
             If dt.Tables(0).Rows.Count >= 1 Then
-                MsgBox("Lo sentimos, el nombre de usuario ya exite.", "Aigle | e-Learning")
+                MessageBox.Show("Lo sentimos, el nombre de usuario ya exite.", "Aigle | e-Learning")
             Else
                 If txt_conf_pass.Text = txt_passw.Text Then
                     csql.sentencia("INSERT INTO Users(name, last_name, email, username, role, password)
@@ -27,11 +27,11 @@ VALUES('" & txt_nombre.Text & "','" & txt_ap.Text & "','" & txt_email.Text & "',
                     courses.Show()
                     Me.Close()
                 Else
-                    MsgBox("Tus contraseñas no coinciden.", "Aigle | e-Learning")
+                    MessageBox.Show("Tus contraseñas no coinciden.", "Aigle | e-Learning")
                 End If
             End If
         Catch ex As Exception
-            MsgBox("Tuvimos un error, trabajamos en solucionarlo pronto. ", "Aigle | e-Learning")
+            MessageBox.Show("Tuvimos un error, trabajamos en solucionarlo pronto. ", "Aigle | e-Learning")
         End Try
     End Sub
 

@@ -30,7 +30,7 @@ Public Class Users
                 lbl.name = idLesson
                 Dim label As Label = lbl
                 lbl.autosize = True
-                lbl.text = data.Tables(0).Rows(index)(1) & " " & data.Tables(0).Rows(index)(1)
+                lbl.text = data.Tables(0).Rows(index)(1) & " " & data.Tables(0).Rows(index)(2)
 
                 ' Label convertir
                 Dim conver As Object = New Label
@@ -66,23 +66,23 @@ Public Class Users
 
             Next
         Catch ex As Exception
-            MsgBox("Tuvimos un error, estamos trabajando en solucionarlo", "Aigle | e-Learning")
+            MessageBox.Show("Tuvimos un error, estamos trabajando en solucionarlo", "Aigle | e-Learning")
         End Try
     End Sub
     Private Sub convertirHandle(ByVal sender As System.Object, ByVal e As System.EventArgs)
         If sender.tag = 0 Then
             Try
                 csql.sentencia("UPDATE Users SET role='1' WHERE id='" & sender.name & "'")
-                MsgBox("Se actualizó con éxito.", "Aigle | e-Learning")
+                MessageBox.Show("Se actualizó con éxito.", "Aigle | e-Learning")
             Catch ex As Exception
-                MsgBox("Tuvimos un problema al procesar la información", "Aigle | e-Learning")
+                MessageBox.Show("Tuvimos un problema al procesar la información", "Aigle | e-Learning")
             End Try
         ElseIf sender.tag = 1 Then
             Try
                 csql.sentencia("UPDATE Users SET role='0' WHERE id='" & sender.name & "'")
-                MsgBox("Se actualizó con éxito.", "Aigle | e-Learning")
+                MessageBox.Show("Se actualizó con éxito.", "Aigle | e-Learning")
             Catch ex As Exception
-                MsgBox("Tuvimos un problema al procesar la información", "Aigle | e-Learning")
+                MessageBox.Show("Tuvimos un problema al procesar la información", "Aigle | e-Learning")
             End Try
         End If
         Dim users As New Users(isAdmin, userId)
@@ -95,9 +95,9 @@ Public Class Users
             Dim users As New Users(isAdmin, userId)
             users.Show()
             Me.Close()
-            MsgBox("Usuario eliminado.", "Aigle | e-Learning")
+            MessageBox.Show("Usuario eliminado.", "Aigle | e-Learning")
         Catch ex As Exception
-            MsgBox("Tuvimos un error al procesar la información.", "Aigle | e-Learning")
+            MessageBox.Show("Tuvimos un error al procesar la información.", "Aigle | e-Learning")
         End Try
     End Sub
 
