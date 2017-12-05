@@ -58,3 +58,8 @@ C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\bi
 C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Interop.ShockwaveFlashObjects.dll
 C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
 C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.vbproj.ResolveComReference.cache
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\bin\Debug\Interop.WMPLib.dll
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Interop.WMPLib.dll
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\andres\Documents\Visual Studio 2015\Projects\itsncgpracticas\aiglev2\obj\Debug\Maquetación.Users.resources

@@ -28,8 +28,9 @@ Partial Class Cursos
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.tablecourses = New System.Windows.Forms.TableLayoutPanel()
         Me.linkaddcourse = New System.Windows.Forms.LinkLabel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.backToCourse = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.admin = New System.Windows.Forms.LinkLabel()
         Me.GroupBox2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -67,6 +68,7 @@ Partial Class Cursos
         'GroupBox2
         '
         Me.GroupBox2.AutoSize = True
+        Me.GroupBox2.Controls.Add(Me.admin)
         Me.GroupBox2.Controls.Add(Me.tablecourses)
         Me.GroupBox2.Controls.Add(Me.linkaddcourse)
         Me.GroupBox2.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -80,9 +82,10 @@ Partial Class Cursos
         'tablecourses
         '
         Me.tablecourses.AutoSize = True
-        Me.tablecourses.ColumnCount = 2
+        Me.tablecourses.ColumnCount = 3
         Me.tablecourses.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.tablecourses.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.tablecourses.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109.0!))
+        Me.tablecourses.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110.0!))
         Me.tablecourses.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tablecourses.Location = New System.Drawing.Point(43, 53)
         Me.tablecourses.Name = "tablecourses"
@@ -103,6 +106,16 @@ Partial Class Cursos
         Me.linkaddcourse.TabStop = True
         Me.linkaddcourse.Text = "+ Crear curso"
         '
+        'backToCourse
+        '
+        Me.backToCourse.AutoSize = True
+        Me.backToCourse.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.backToCourse.Location = New System.Drawing.Point(765, 135)
+        Me.backToCourse.Name = "backToCourse"
+        Me.backToCourse.Size = New System.Drawing.Size(119, 18)
+        Me.backToCourse.TabIndex = 54
+        Me.backToCourse.Text = "- Cerrar Sesión "
+        '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Maquetación.My.Resources.Resources.logo
@@ -113,15 +126,17 @@ Partial Class Cursos
         Me.PictureBox1.TabIndex = 31
         Me.PictureBox1.TabStop = False
         '
-        'backToCourse
+        'admin
         '
-        Me.backToCourse.AutoSize = True
-        Me.backToCourse.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.backToCourse.Location = New System.Drawing.Point(765, 135)
-        Me.backToCourse.Name = "backToCourse"
-        Me.backToCourse.Size = New System.Drawing.Size(119, 18)
-        Me.backToCourse.TabIndex = 54
-        Me.backToCourse.Text = "- Cerrar Sesión "
+        Me.admin.AutoSize = True
+        Me.admin.BackColor = System.Drawing.Color.Transparent
+        Me.admin.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.admin.Location = New System.Drawing.Point(577, 22)
+        Me.admin.Name = "admin"
+        Me.admin.Size = New System.Drawing.Size(160, 18)
+        Me.admin.TabIndex = 37
+        Me.admin.TabStop = True
+        Me.admin.Text = "* Administrar usuarios"
         '
         'Cursos
         '
@@ -154,4 +169,5 @@ Partial Class Cursos
     Friend WithEvents linkaddcourse As LinkLabel
     Friend WithEvents tablecourses As TableLayoutPanel
     Friend WithEvents backToCourse As Label
+    Friend WithEvents admin As LinkLabel
 End Class

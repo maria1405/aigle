@@ -6,7 +6,7 @@ Public Class login
     Dim cadenaconexion As String
     Public csql As New conexion
     Dim data As New DataSet
-
+    Dim isAdmin As Boolean
     'Dim dbcon As New OleDb.OleDbConnection
     'Dim dbup As New OleDb.OleDbCommand
 
@@ -23,13 +23,13 @@ Public Class login
             Else
                 Static tried As Integer
                 tried = tried + 1
-                MsgBox("ESTIMADO USUARIO, TIENES " & (5 - tried) & " INTENTOS PARA PROBAR QUE ES EL USUARIO CORRECTO")
+                MsgBox("ESTIMADO USUARIO, TIENES " & (5 - tried) & " INTENTOS PARA PROBAR QUE ES EL USUARIO CORRECTO", "Aigle | e-Learning")
                 If tried = 5 Then
-                    MsgBox("EL SISTEMA SE CERRARÁ, GRACIAS", MsgBoxStyle.Critical, "SISTEMA")
+                    MsgBox("EL SISTEMA SE CERRARÁ, GRACIAS", MsgBoxStyle.Critical, "Aigle | e-Learning")
                 End If
             End If
         Catch ex As Exception
-            MsgBox(ex.Message)
+            MsgBox("Error detectado", "Aigle | e-Learning")
         End Try
     End Sub
 
@@ -37,7 +37,12 @@ Public Class login
         ProgressBar1.Increment(5)
         If ProgressBar1.Value = 100 Then
             Timer1.Enabled = False
-            Dim misCursos As New Cursos(data.Tables(0).Rows(0)(0))
+            If data.Tables(0).Rows(0)(5) = 0 Then
+                isAdmin = False
+            ElseIf data.Tables(0).Rows(0)(5) = 1 Then
+                isAdmin = True
+            End If
+            Dim misCursos As New Cursos(data.Tables(0).Rows(0)(0), isAdmin)
             misCursos.Show()
             Me.Hide()
         End If

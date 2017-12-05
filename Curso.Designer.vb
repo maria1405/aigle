@@ -56,16 +56,16 @@ Partial Class Curso
         'tablelessons
         '
         Me.tablelessons.AutoSize = True
-        Me.tablelessons.ColumnCount = 2
-        Me.tablelessons.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.tablelessons.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.tablelessons.ColumnCount = 3
+        Me.tablelessons.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85.32374!))
+        Me.tablelessons.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.67626!))
+        Me.tablelessons.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100.0!))
         Me.tablelessons.Font = New System.Drawing.Font("Arial", 14.0!)
         Me.tablelessons.Location = New System.Drawing.Point(27, 49)
         Me.tablelessons.Name = "tablelessons"
-        Me.tablelessons.Padding = New System.Windows.Forms.Padding(15, 35, 15, 35)
         Me.tablelessons.RowCount = 1
-        Me.tablelessons.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.tablelessons.Size = New System.Drawing.Size(796, 70)
+        Me.tablelessons.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.tablelessons.Size = New System.Drawing.Size(796, 36)
         Me.tablelessons.TabIndex = 0
         '
         'GroupBox1

@@ -23,6 +23,9 @@ Partial Class addlesson
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btn_examinar = New System.Windows.Forms.Button()
+        Me.txt_url = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.btn_cancelar = New System.Windows.Forms.Button()
         Me.txt_name = New System.Windows.Forms.TextBox()
         Me.btn_guardar = New System.Windows.Forms.Button()
@@ -33,6 +36,7 @@ Partial Class addlesson
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.opfile = New System.Windows.Forms.OpenFileDialog()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -41,6 +45,9 @@ Partial Class addlesson
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.GroupBox1.Controls.Add(Me.btn_examinar)
+        Me.GroupBox1.Controls.Add(Me.txt_url)
+        Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.btn_cancelar)
         Me.GroupBox1.Controls.Add(Me.txt_name)
         Me.GroupBox1.Controls.Add(Me.btn_guardar)
@@ -50,14 +57,42 @@ Partial Class addlesson
         Me.GroupBox1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(12, 148)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(889, 412)
+        Me.GroupBox1.Size = New System.Drawing.Size(889, 480)
         Me.GroupBox1.TabIndex = 44
         Me.GroupBox1.TabStop = False
+        '
+        'btn_examinar
+        '
+        Me.btn_examinar.Location = New System.Drawing.Point(725, 309)
+        Me.btn_examinar.Name = "btn_examinar"
+        Me.btn_examinar.Size = New System.Drawing.Size(130, 31)
+        Me.btn_examinar.TabIndex = 31
+        Me.btn_examinar.Text = "EXAMINAR..."
+        Me.btn_examinar.UseVisualStyleBackColor = True
+        '
+        'txt_url
+        '
+        Me.txt_url.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_url.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_url.Location = New System.Drawing.Point(132, 312)
+        Me.txt_url.Multiline = True
+        Me.txt_url.Name = "txt_url"
+        Me.txt_url.Size = New System.Drawing.Size(587, 28)
+        Me.txt_url.TabIndex = 30
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(29, 322)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(57, 18)
+        Me.Label3.TabIndex = 29
+        Me.Label3.Text = "VÍDEO"
         '
         'btn_cancelar
         '
         Me.btn_cancelar.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_cancelar.Location = New System.Drawing.Point(529, 326)
+        Me.btn_cancelar.Location = New System.Drawing.Point(523, 436)
         Me.btn_cancelar.Name = "btn_cancelar"
         Me.btn_cancelar.Size = New System.Drawing.Size(160, 38)
         Me.btn_cancelar.TabIndex = 28
@@ -77,7 +112,7 @@ Partial Class addlesson
         'btn_guardar
         '
         Me.btn_guardar.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_guardar.Location = New System.Drawing.Point(695, 326)
+        Me.btn_guardar.Location = New System.Drawing.Point(689, 436)
         Me.btn_guardar.Name = "btn_guardar"
         Me.btn_guardar.Size = New System.Drawing.Size(160, 38)
         Me.btn_guardar.TabIndex = 25
@@ -152,12 +187,16 @@ Partial Class addlesson
         Me.PictureBox1.TabIndex = 41
         Me.PictureBox1.TabStop = False
         '
+        'opfile
+        '
+        Me.opfile.FileName = "OpenFileDialog1"
+        '
         'addlesson
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(913, 570)
+        Me.ClientSize = New System.Drawing.Size(913, 640)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.TextBox8)
         Me.Controls.Add(Me.TextBox7)
@@ -185,4 +224,8 @@ Partial Class addlesson
     Friend WithEvents TextBox7 As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents txt_url As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents btn_examinar As Button
+    Friend WithEvents opfile As OpenFileDialog
 End Class

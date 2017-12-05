@@ -28,11 +28,11 @@ Partial Class Leccion
         Me.lblactualizar = New System.Windows.Forms.LinkLabel()
         Me.lessonDescrition = New System.Windows.Forms.TextBox()
         Me.backToCourse = New System.Windows.Forms.Label()
-        Me.video = New AxShockwaveFlashObjects.AxShockwaveFlash()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.player = New AxWMPLib.AxWindowsMediaPlayer()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.video, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.player, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PictureBox1
@@ -86,15 +86,6 @@ Partial Class Leccion
         Me.backToCourse.TabIndex = 53
         Me.backToCourse.Text = "<< Regresar al curso"
         '
-        'video
-        '
-        Me.video.Enabled = True
-        Me.video.Location = New System.Drawing.Point(144, 301)
-        Me.video.Name = "video"
-        Me.video.OcxState = CType(resources.GetObject("video.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.video.Size = New System.Drawing.Size(687, 257)
-        Me.video.TabIndex = 54
-        '
         'TextBox8
         '
         Me.TextBox8.BackColor = System.Drawing.Color.Gray
@@ -115,15 +106,24 @@ Partial Class Leccion
         Me.TextBox7.Size = New System.Drawing.Size(927, 10)
         Me.TextBox7.TabIndex = 55
         '
+        'player
+        '
+        Me.player.Enabled = True
+        Me.player.Location = New System.Drawing.Point(186, 292)
+        Me.player.Name = "player"
+        Me.player.OcxState = CType(resources.GetObject("player.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.player.Size = New System.Drawing.Size(539, 328)
+        Me.player.TabIndex = 57
+        '
         'Leccion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ClientSize = New System.Drawing.Size(913, 570)
+        Me.ClientSize = New System.Drawing.Size(913, 632)
+        Me.Controls.Add(Me.player)
         Me.Controls.Add(Me.TextBox8)
         Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.video)
         Me.Controls.Add(Me.backToCourse)
         Me.Controls.Add(Me.lessonDescrition)
         Me.Controls.Add(Me.PictureBox1)
@@ -133,7 +133,7 @@ Partial Class Leccion
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "LECCION"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.video, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.player, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -143,7 +143,7 @@ Partial Class Leccion
     Friend WithEvents lblactualizar As LinkLabel
     Friend WithEvents lessonDescrition As TextBox
     Friend WithEvents backToCourse As Label
-    Friend WithEvents video As AxShockwaveFlashObjects.AxShockwaveFlash
     Friend WithEvents TextBox8 As TextBox
     Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents player As AxWMPLib.AxWindowsMediaPlayer
 End Class
